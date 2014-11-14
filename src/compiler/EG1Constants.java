@@ -15,11 +15,33 @@ public interface EG1Constants {
   /** RegularExpression Id. */
   int UnicodeDigit = 6;
   /** RegularExpression Id. */
-  int IdentifierStart = 7;
+  int DecimalDigit = 7;
   /** RegularExpression Id. */
-  int IdentifierPart = 8;
+  int NonZeroDigit = 8;
   /** RegularExpression Id. */
-  int IdentifierName = 9;
+  int DecimalDigits = 9;
+  /** RegularExpression Id. */
+  int ExponentIndicator = 10;
+  /** RegularExpression Id. */
+  int SignedInteger = 11;
+  /** RegularExpression Id. */
+  int ExponentPart = 12;
+  /** RegularExpression Id. */
+  int DecimalIntegerLiteral = 13;
+  /** RegularExpression Id. */
+  int DecimalLiteral = 14;
+  /** RegularExpression Id. */
+  int HexDigit = 15;
+  /** RegularExpression Id. */
+  int HexIntegerLiteral = 16;
+  /** RegularExpression Id. */
+  int IdentifierStart = 17;
+  /** RegularExpression Id. */
+  int IdentifierPart = 18;
+  /** RegularExpression Id. */
+  int NumericLiteral = 19;
+  /** RegularExpression Id. */
+  int IdentifierName = 20;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -33,8 +55,19 @@ public interface EG1Constants {
     "\"\\n\"",
     "<UnicodeLetter>",
     "<UnicodeDigit>",
+    "<DecimalDigit>",
+    "<NonZeroDigit>",
+    "<DecimalDigits>",
+    "<ExponentIndicator>",
+    "<SignedInteger>",
+    "<ExponentPart>",
+    "<DecimalIntegerLiteral>",
+    "<DecimalLiteral>",
+    "<HexDigit>",
+    "<HexIntegerLiteral>",
     "<IdentifierStart>",
     "<IdentifierPart>",
+    "<NumericLiteral>",
     "<IdentifierName>",
   };
 

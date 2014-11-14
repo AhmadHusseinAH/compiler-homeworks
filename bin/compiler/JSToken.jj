@@ -5,10 +5,26 @@
 public class EG1{  public static void main(String args []) throws ParseException  {    EG1 parser = new EG1(System.in);
       }}PARSER_END(EG1)SKIP :{  " "| "\r"| "\t"| "\n"}TOKEN : /* Unicode */{
   < #UnicodeLetter : ["a"-"z"]|["A"-"Z"] >
-| < #UnicodeDigit : ["0"-"9"] >}TOKEN :{
+| < #UnicodeDigit : ["0"-"9"] >}
+
+TOKEN : /*numbers*/
+{	< #DecimalDigit : ["0"-"9"] >
+| 	< #NonZeroDigit : ["1"-"9"] >
+| 	< #DecimalDigits : < DecimalDigit > ((< DecimalDigit >)+)? >
+| 	< #ExponentIndicator : "e"|"E" >
+|  	< #SignedInteger : < DecimalDigits > | "+" < DecimalDigits > | "-" < DecimalDigits > >
+|  	< #ExponentPart : < ExponentIndicator > < SignedInteger > >
+| 	< #DecimalIntegerLiteral : "0" | < NonZeroDigit > (< DecimalDigits >)? >
+| 	< #DecimalLiteral :  < DecimalIntegerLiteral > "." (< DecimalDigits >)? (< ExponentPart >)?
+						| "." < DecimalDigits > (< ExponentPart >)?
+						| < DecimalIntegerLiteral > (< ExponentPart >)? >
+|   < #HexDigit : ["0"-"9"]|["a"-"f"]|["A"-"F"] >
+| 	< #HexIntegerLiteral : ("0x"|"0X") (< HexDigit >)+ >
+}TOKEN :{
  < #IdentifierStart : < UnicodeLetter >|"$"|"_"|"\\" >
 | < #IdentifierPart : < IdentifierStart > | < UnicodeLetter > | < UnicodeDigit > >}
 
 TOKEN :
-{< IdentifierName : < IdentifierStart > (< IdentifierPart >)? > 
+{
+  < NumericLiteral : < HexIntegerLiteral > | < DecimalLiteral > > | < IdentifierName : < IdentifierStart > ((< IdentifierPart >)+)? > 
 }
