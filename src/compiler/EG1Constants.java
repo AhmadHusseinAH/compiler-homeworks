@@ -39,9 +39,147 @@ public interface EG1Constants {
   /** RegularExpression Id. */
   int IdentifierPart = 18;
   /** RegularExpression Id. */
-  int NumericLiteral = 19;
+  int PLUS = 19;
   /** RegularExpression Id. */
-  int IdentifierName = 20;
+  int MIN = 20;
+  /** RegularExpression Id. */
+  int MULT = 21;
+  /** RegularExpression Id. */
+  int DIV = 22;
+  /** RegularExpression Id. */
+  int MOD = 23;
+  /** RegularExpression Id. */
+  int INCREMENT = 24;
+  /** RegularExpression Id. */
+  int DECREMENT = 25;
+  /** RegularExpression Id. */
+  int ABSTRACT = 26;
+  /** RegularExpression Id. */
+  int ARGUMENTS = 27;
+  /** RegularExpression Id. */
+  int BOOLEAN = 28;
+  /** RegularExpression Id. */
+  int BREAK = 29;
+  /** RegularExpression Id. */
+  int BYTE = 30;
+  /** RegularExpression Id. */
+  int CASE = 31;
+  /** RegularExpression Id. */
+  int CATCH = 32;
+  /** RegularExpression Id. */
+  int CHAR = 33;
+  /** RegularExpression Id. */
+  int CLASS = 34;
+  /** RegularExpression Id. */
+  int CONST = 35;
+  /** RegularExpression Id. */
+  int CONTINUE = 36;
+  /** RegularExpression Id. */
+  int DEBUGGER = 37;
+  /** RegularExpression Id. */
+  int DELETE = 38;
+  /** RegularExpression Id. */
+  int DO = 39;
+  /** RegularExpression Id. */
+  int DOUBLE = 40;
+  /** RegularExpression Id. */
+  int ELSE = 41;
+  /** RegularExpression Id. */
+  int ENUM = 42;
+  /** RegularExpression Id. */
+  int EVAL = 43;
+  /** RegularExpression Id. */
+  int EXPORT = 44;
+  /** RegularExpression Id. */
+  int EXTENDS = 45;
+  /** RegularExpression Id. */
+  int FALSE = 46;
+  /** RegularExpression Id. */
+  int FINAL = 47;
+  /** RegularExpression Id. */
+  int FINALLY = 48;
+  /** RegularExpression Id. */
+  int FLOAT = 49;
+  /** RegularExpression Id. */
+  int FOR = 50;
+  /** RegularExpression Id. */
+  int FUNCTION = 51;
+  /** RegularExpression Id. */
+  int GOTO = 52;
+  /** RegularExpression Id. */
+  int IF = 53;
+  /** RegularExpression Id. */
+  int IMPLEMENTS = 54;
+  /** RegularExpression Id. */
+  int IMPORT = 55;
+  /** RegularExpression Id. */
+  int IN = 56;
+  /** RegularExpression Id. */
+  int INSTANCEOF = 57;
+  /** RegularExpression Id. */
+  int INT = 58;
+  /** RegularExpression Id. */
+  int INTERFACE = 59;
+  /** RegularExpression Id. */
+  int LET = 60;
+  /** RegularExpression Id. */
+  int LONG = 61;
+  /** RegularExpression Id. */
+  int NATIVE = 62;
+  /** RegularExpression Id. */
+  int NEW = 63;
+  /** RegularExpression Id. */
+  int NULL = 64;
+  /** RegularExpression Id. */
+  int PACKAGE = 65;
+  /** RegularExpression Id. */
+  int PRIVATE = 66;
+  /** RegularExpression Id. */
+  int PROTECTED = 67;
+  /** RegularExpression Id. */
+  int PUBLIC = 68;
+  /** RegularExpression Id. */
+  int RETURN = 69;
+  /** RegularExpression Id. */
+  int SHORT = 70;
+  /** RegularExpression Id. */
+  int STATIC = 71;
+  /** RegularExpression Id. */
+  int SUPER = 72;
+  /** RegularExpression Id. */
+  int SWITCH = 73;
+  /** RegularExpression Id. */
+  int SYNCHRONIZED = 74;
+  /** RegularExpression Id. */
+  int THIS = 75;
+  /** RegularExpression Id. */
+  int THROW = 76;
+  /** RegularExpression Id. */
+  int THROWS = 77;
+  /** RegularExpression Id. */
+  int TRANSIENT = 78;
+  /** RegularExpression Id. */
+  int TRUE = 79;
+  /** RegularExpression Id. */
+  int TRY = 80;
+  /** RegularExpression Id. */
+  int TYPEOF = 81;
+  /** RegularExpression Id. */
+  int VAR = 82;
+  /** RegularExpression Id. */
+  int VOID = 83;
+  /** RegularExpression Id. */
+  int VOLATILE = 84;
+  /** RegularExpression Id. */
+  int WHILE = 85;
+  /** RegularExpression Id. */
+  int WITH = 86;
+  /** RegularExpression Id. */
+  int YIELD = 87;
+  /** RegularExpression Id. */
+  int NumericLiteral = 88;
+  /** RegularExpression Id. */
+  int IdentifierName = 89;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -67,6 +205,75 @@ public interface EG1Constants {
     "<HexIntegerLiteral>",
     "<IdentifierStart>",
     "<IdentifierPart>",
+    "\"+\"",
+    "\"-\"",
+    "\"*\"",
+    "\"/\"",
+    "\"%\"",
+    "\"++\"",
+    "\"--\"",
+    "\"abstract\"",
+    "\"arguments\"",
+    "\"boolean\"",
+    "\"break\"",
+    "\"byte\"",
+    "\"case\"",
+    "\"catch\"",
+    "\"char\"",
+    "\"class\"",
+    "\"const\"",
+    "\"continue\"",
+    "\"debugger\"",
+    "\"delete\"",
+    "\"do\"",
+    "\"double\"",
+    "\"else\"",
+    "\"enum\"",
+    "\"eval\"",
+    "\"export\"",
+    "\"extends \"",
+    "\"false\"",
+    "\"final\"",
+    "\"finally\"",
+    "\"float\"",
+    "\"for\"",
+    "\"function\"",
+    "\"goto\"",
+    "\"if\"",
+    "\"implements\"",
+    "\"import\"",
+    "\"in\"",
+    "\"instanceof\"",
+    "\"int\"",
+    "\"interface\"",
+    "\"let\"",
+    "\"long\"",
+    "\"native\"",
+    "\"new\"",
+    "\"null\"",
+    "\"package\"",
+    "\"private\"",
+    "\"protected\"",
+    "\"public\"",
+    "\"return\"",
+    "\"short\"",
+    "\"static\"",
+    "\"super\"",
+    "\"switch\"",
+    "\"synchronized\"",
+    "\"this\"",
+    "\"throw\"",
+    "\"throws\"",
+    "\"transient\"",
+    "\"true\"",
+    "\"try\"",
+    "\"typeof\"",
+    "\"var\"",
+    "\"void\"",
+    "\"volatile\"",
+    "\"while\"",
+    "\"with\"",
+    "\"yield\"",
     "<NumericLiteral>",
     "<IdentifierName>",
   };
