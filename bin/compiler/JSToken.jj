@@ -35,7 +35,7 @@ TOKEN : /* Unicode */
 | < #UnicodeDigit : ["0"-"9"] >
 }
 
-TOKEN : /*numbers*/
+TOKEN : /*help numbers*/
 {
 	< #DecimalDigit : ["0"-"9"] >
 | 	< #NonZeroDigit : ["1"-"9"] >
@@ -51,11 +51,19 @@ TOKEN : /*numbers*/
 | 	< #HexIntegerLiteral : ("0x"|"0X") (< HexDigit >)+ >
 }
 
-TOKEN :
+TOKEN :/*help identifire*/
 {
  < #IdentifierStart : < UnicodeLetter >|"$"|"_"|"\\" >
 | < #IdentifierPart : < IdentifierStart > | < UnicodeLetter > | < UnicodeDigit > >
 }
+
+TOKEN :/*help string*/
+{
+  < #SingleStringCharacter : ~["'"] >
+| < #DoubleStringCharacter : ~["\""] >
+| < #SingleStringCharacters : (< SingleStringCharacter >)+ >
+| < #DoubleStringCharacters : (< DoubleStringCharacter >)+ >
+} 
 
 
 TOKEN :  //JavaScript Arithmetic Operators
@@ -140,7 +148,9 @@ TOKEN : // Reserved Words
 TOKEN :
 {
   < NumericLiteral : < HexIntegerLiteral > | < DecimalLiteral >> 
-| < IdentifierName : < IdentifierStart > ((< IdentifierPart >)+)? > 
+| < IdentifierName : < IdentifierStart > ((< IdentifierPart >)+)? >
+| < StringLiteral : "'" (< SingleStringCharacters >)? "'"
+					| "\"" (< DoubleStringCharacters >)? "\"" >
 }
 
 
