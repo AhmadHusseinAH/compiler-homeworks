@@ -15,7 +15,7 @@ public class EG1
   public static void main(String args []) throws ParseException
   {
     EG1 parser = new EG1(System.in);
-    
+    parser.test();
   }
 }
 
@@ -153,7 +153,18 @@ TOKEN :
 					| "\"" (< DoubleStringCharacters >)? "\"" >
 }
 
+void test():
+{}{    (test_())+}
 
+void test_():
+{
+  Token t;}{
+  (t = < NumericLiteral >
+  |t = < IdentifierName >
+  |t = < StringLiteral >)
+  {
+    System.out.println("token kind : "+t.kind);
+    System.out.println("token image : "+t.image);  }}
 
 
 
