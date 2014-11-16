@@ -68,7 +68,7 @@ TOKEN :/*help string*/
 } 
 
 
-TOKEN :  //JavaScript Arithmetic Operators
+TOKEN :  //Punctuator
 {
   < PLUS : "+" >
 | < MIN : "-" >
@@ -77,6 +77,46 @@ TOKEN :  //JavaScript Arithmetic Operators
 | < MOD : "%" >
 | < INCREMENT :"++" >
 | < DECREMENT : "--" >
+| < OPENBRACET : "(" >
+| < CLOSEBRACET : ")" >
+| < COMMA : "," >
+| < Exclamation : "!" >
+| < Ampersand : "&" >
+| < Period : "." >
+| < Less : "<" >
+| < Equals : "=" >
+| < Greater : ">" >
+| < Question :"?" >
+| < Colon : ":" >
+| < OpeningBracket : "[" >
+| < ClosingBracket : "]" >
+| < Caret : "^" >
+| < OpeningBrace : "{" >
+| < ClosingBrace : "}" >
+| < VerticalBar : "|" >
+| < Tilde : "~" >
+| < LessEquals : "<=" >
+| < GreaterEquals : " >=" >
+| < EqualsEquals : "==" >
+| < ExclamationEquals : "!=" >
+| < EqualsEqualsEquals : "===" >
+| < ExclamationEqualsEquals : "!==" >
+| < SHIFTLEFT : "<<" >
+| < SHIFTRIGHT : ">>" >
+| < SHIFTRIGHTT : ">>>" >
+| < AND : "&&" >
+| < OR : "||" >
+| < PLUSEquals : "+=" >
+| < MINEquals : "-=" >
+| < MULTEquals : "*=" >
+| < MODEquals : "%=" >
+| < DIVEquals : "/=" >
+| < SHIFTLEFTEquals : "<<=" >
+| < SHIFTRIGHTEquals : ">>=" >
+| < SHIFTRIGHTTEquals : ">>>=" >
+| < AmpersandEquals : "&=" >
+| < VerticalBarEquals : "|=" >
+| < CaretEquals : "^=" >
 }
 
 TOKEN : // Reserved Words
@@ -144,7 +184,6 @@ TOKEN : // Reserved Words
   | < WHILE : "while" >
   | < WITH : "with" >
   | < YIELD : "yield" >
-  
 }
 
 TOKEN :
