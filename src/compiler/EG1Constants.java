@@ -11,185 +11,185 @@ public interface EG1Constants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int UnicodeLetter = 5;
+  int UnicodeLetter = 7;
   /** RegularExpression Id. */
-  int UnicodeDigit = 6;
+  int UnicodeDigit = 8;
   /** RegularExpression Id. */
-  int DecimalDigit = 7;
+  int DecimalDigit = 9;
   /** RegularExpression Id. */
-  int NonZeroDigit = 8;
+  int NonZeroDigit = 10;
   /** RegularExpression Id. */
-  int DecimalDigits = 9;
+  int DecimalDigits = 11;
   /** RegularExpression Id. */
-  int ExponentIndicator = 10;
+  int ExponentIndicator = 12;
   /** RegularExpression Id. */
-  int SignedInteger = 11;
+  int SignedInteger = 13;
   /** RegularExpression Id. */
-  int ExponentPart = 12;
+  int ExponentPart = 14;
   /** RegularExpression Id. */
-  int DecimalIntegerLiteral = 13;
+  int DecimalIntegerLiteral = 15;
   /** RegularExpression Id. */
-  int DecimalLiteral = 14;
+  int DecimalLiteral = 16;
   /** RegularExpression Id. */
-  int HexDigit = 15;
+  int HexDigit = 17;
   /** RegularExpression Id. */
-  int HexIntegerLiteral = 16;
+  int HexIntegerLiteral = 18;
   /** RegularExpression Id. */
-  int IdentifierStart = 17;
+  int IdentifierStart = 19;
   /** RegularExpression Id. */
-  int IdentifierPart = 18;
+  int IdentifierPart = 20;
   /** RegularExpression Id. */
-  int SingleStringCharacter = 19;
+  int SingleStringCharacter = 21;
   /** RegularExpression Id. */
-  int DoubleStringCharacter = 20;
+  int DoubleStringCharacter = 22;
   /** RegularExpression Id. */
-  int SingleStringCharacters = 21;
+  int SingleStringCharacters = 23;
   /** RegularExpression Id. */
-  int DoubleStringCharacters = 22;
+  int DoubleStringCharacters = 24;
   /** RegularExpression Id. */
-  int PLUS = 23;
+  int PLUS = 25;
   /** RegularExpression Id. */
-  int MIN = 24;
+  int MIN = 26;
   /** RegularExpression Id. */
-  int MULT = 25;
+  int MULT = 27;
   /** RegularExpression Id. */
-  int DIV = 26;
+  int DIV = 28;
   /** RegularExpression Id. */
-  int MOD = 27;
+  int MOD = 29;
   /** RegularExpression Id. */
-  int INCREMENT = 28;
+  int INCREMENT = 30;
   /** RegularExpression Id. */
-  int DECREMENT = 29;
+  int DECREMENT = 31;
   /** RegularExpression Id. */
-  int ABSTRACT = 30;
+  int ABSTRACT = 32;
   /** RegularExpression Id. */
-  int ARGUMENTS = 31;
+  int ARGUMENTS = 33;
   /** RegularExpression Id. */
-  int BOOLEAN = 32;
+  int BOOLEAN = 34;
   /** RegularExpression Id. */
-  int BREAK = 33;
+  int BREAK = 35;
   /** RegularExpression Id. */
-  int BYTE = 34;
+  int BYTE = 36;
   /** RegularExpression Id. */
-  int CASE = 35;
+  int CASE = 37;
   /** RegularExpression Id. */
-  int CATCH = 36;
+  int CATCH = 38;
   /** RegularExpression Id. */
-  int CHAR = 37;
+  int CHAR = 39;
   /** RegularExpression Id. */
-  int CLASS = 38;
+  int CLASS = 40;
   /** RegularExpression Id. */
-  int CONST = 39;
+  int CONST = 41;
   /** RegularExpression Id. */
-  int CONTINUE = 40;
+  int CONTINUE = 42;
   /** RegularExpression Id. */
-  int DEBUGGER = 41;
+  int DEBUGGER = 43;
   /** RegularExpression Id. */
-  int DELETE = 42;
+  int DELETE = 44;
   /** RegularExpression Id. */
-  int DO = 43;
+  int DO = 45;
   /** RegularExpression Id. */
-  int DOUBLE = 44;
+  int DOUBLE = 46;
   /** RegularExpression Id. */
-  int ELSE = 45;
+  int ELSE = 47;
   /** RegularExpression Id. */
-  int ENUM = 46;
+  int ENUM = 48;
   /** RegularExpression Id. */
-  int EVAL = 47;
+  int EVAL = 49;
   /** RegularExpression Id. */
-  int EXPORT = 48;
+  int EXPORT = 50;
   /** RegularExpression Id. */
-  int EXTENDS = 49;
+  int EXTENDS = 51;
   /** RegularExpression Id. */
-  int FALSE = 50;
+  int FALSE = 52;
   /** RegularExpression Id. */
-  int FINAL = 51;
+  int FINAL = 53;
   /** RegularExpression Id. */
-  int FINALLY = 52;
+  int FINALLY = 54;
   /** RegularExpression Id. */
-  int FLOAT = 53;
+  int FLOAT = 55;
   /** RegularExpression Id. */
-  int FOR = 54;
+  int FOR = 56;
   /** RegularExpression Id. */
-  int FUNCTION = 55;
+  int FUNCTION = 57;
   /** RegularExpression Id. */
-  int GOTO = 56;
+  int GOTO = 58;
   /** RegularExpression Id. */
-  int IF = 57;
+  int IF = 59;
   /** RegularExpression Id. */
-  int IMPLEMENTS = 58;
+  int IMPLEMENTS = 60;
   /** RegularExpression Id. */
-  int IMPORT = 59;
+  int IMPORT = 61;
   /** RegularExpression Id. */
-  int IN = 60;
+  int IN = 62;
   /** RegularExpression Id. */
-  int INSTANCEOF = 61;
+  int INSTANCEOF = 63;
   /** RegularExpression Id. */
-  int INT = 62;
+  int INT = 64;
   /** RegularExpression Id. */
-  int INTERFACE = 63;
+  int INTERFACE = 65;
   /** RegularExpression Id. */
-  int LET = 64;
+  int LET = 66;
   /** RegularExpression Id. */
-  int LONG = 65;
+  int LONG = 67;
   /** RegularExpression Id. */
-  int NATIVE = 66;
+  int NATIVE = 68;
   /** RegularExpression Id. */
-  int NEW = 67;
+  int NEW = 69;
   /** RegularExpression Id. */
-  int NULL = 68;
+  int NULL = 70;
   /** RegularExpression Id. */
-  int PACKAGE = 69;
+  int PACKAGE = 71;
   /** RegularExpression Id. */
-  int PRIVATE = 70;
+  int PRIVATE = 72;
   /** RegularExpression Id. */
-  int PROTECTED = 71;
+  int PROTECTED = 73;
   /** RegularExpression Id. */
-  int PUBLIC = 72;
+  int PUBLIC = 74;
   /** RegularExpression Id. */
-  int RETURN = 73;
+  int RETURN = 75;
   /** RegularExpression Id. */
-  int SHORT = 74;
+  int SHORT = 76;
   /** RegularExpression Id. */
-  int STATIC = 75;
+  int STATIC = 77;
   /** RegularExpression Id. */
-  int SUPER = 76;
+  int SUPER = 78;
   /** RegularExpression Id. */
-  int SWITCH = 77;
+  int SWITCH = 79;
   /** RegularExpression Id. */
-  int SYNCHRONIZED = 78;
+  int SYNCHRONIZED = 80;
   /** RegularExpression Id. */
-  int THIS = 79;
+  int THIS = 81;
   /** RegularExpression Id. */
-  int THROW = 80;
+  int THROW = 82;
   /** RegularExpression Id. */
-  int THROWS = 81;
+  int THROWS = 83;
   /** RegularExpression Id. */
-  int TRANSIENT = 82;
+  int TRANSIENT = 84;
   /** RegularExpression Id. */
-  int TRUE = 83;
+  int TRUE = 85;
   /** RegularExpression Id. */
-  int TRY = 84;
+  int TRY = 86;
   /** RegularExpression Id. */
-  int TYPEOF = 85;
+  int TYPEOF = 87;
   /** RegularExpression Id. */
-  int VAR = 86;
+  int VAR = 88;
   /** RegularExpression Id. */
-  int VOID = 87;
+  int VOID = 89;
   /** RegularExpression Id. */
-  int VOLATILE = 88;
+  int VOLATILE = 90;
   /** RegularExpression Id. */
-  int WHILE = 89;
+  int WHILE = 91;
   /** RegularExpression Id. */
-  int WITH = 90;
+  int WITH = 92;
   /** RegularExpression Id. */
-  int YIELD = 91;
+  int YIELD = 93;
   /** RegularExpression Id. */
-  int NumericLiteral = 92;
+  int NumericLiteral = 94;
   /** RegularExpression Id. */
-  int IdentifierName = 93;
+  int IdentifierName = 95;
   /** RegularExpression Id. */
-  int StringLiteral = 94;
+  int StringLiteral = 96;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -201,6 +201,8 @@ public interface EG1Constants {
     "\"\\r\"",
     "\"\\t\"",
     "\"\\n\"",
+    "<token of kind 5>",
+    "<token of kind 6>",
     "<UnicodeLetter>",
     "<UnicodeDigit>",
     "<DecimalDigit>",

@@ -60,10 +60,12 @@ public class EG1 implements EG1Constants {
   static private int[] jj_la1_0;
   static private int[] jj_la1_1;
   static private int[] jj_la1_2;
+  static private int[] jj_la1_3;
   static {
       jj_la1_init_0();
       jj_la1_init_1();
       jj_la1_init_2();
+      jj_la1_init_3();
    }
    private static void jj_la1_init_0() {
       jj_la1_0 = new int[] {0x0,0x0,};
@@ -72,7 +74,10 @@ public class EG1 implements EG1Constants {
       jj_la1_1 = new int[] {0x0,0x0,};
    }
    private static void jj_la1_init_2() {
-      jj_la1_2 = new int[] {0x70000000,0x70000000,};
+      jj_la1_2 = new int[] {0xc0000000,0xc0000000,};
+   }
+   private static void jj_la1_init_3() {
+      jj_la1_3 = new int[] {0x1,0x1,};
    }
 
   /** Constructor with InputStream. */
@@ -210,7 +215,7 @@ public class EG1 implements EG1Constants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[95];
+    boolean[] la1tokens = new boolean[97];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -227,10 +232,13 @@ public class EG1 implements EG1Constants {
           if ((jj_la1_2[i] & (1<<j)) != 0) {
             la1tokens[64+j] = true;
           }
+          if ((jj_la1_3[i] & (1<<j)) != 0) {
+            la1tokens[96+j] = true;
+          }
         }
       }
     }
-    for (int i = 0; i < 95; i++) {
+    for (int i = 0; i < 97; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;
